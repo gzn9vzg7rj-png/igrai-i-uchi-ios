@@ -1,33 +1,27 @@
-<!doctype html><html lang="bg"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover,user-scalable=no"><meta name="theme-color" content="#6fd05b"><meta name="apple-mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-status-bar-style" content="default"><meta name="apple-mobile-web-app-title" content="Играй и учи"><link rel="manifest" href="./manifest.webmanifest"><link rel="icon" href="./icon.svg"><link rel="stylesheet" href="./style.css?v=5"><title>Играй и учи</title></head><body><div class="app">
-<section id="home"><div class="topbar"><button id="albumBtn" class="round" aria-label="Албум">🏆</button><button id="settingsBtn" class="round" aria-label="Настройки">⚙️</button></div><div class="hero"><div class="mascot">🦁🚗🎈</div><h1>Играй и учи</h1><p>Учи, играй и събирай звездички</p><div class="stats"><span>🐾 60+ животни</span><span>🧸 70+ предмета</span><span>🚗 35+ превозни средства</span><span>⭐ <b id="homeStars">0</b></span></div></div>
-<h3 class="sectionTitle">Учи по категории</h3><div class="menu">
-<button class="mode animals" data-mode="animals"><b>🐾</b><span><strong>Животни</strong><small>Ферма, диви, морски и още</small></span></button>
-<button class="mode objects" data-mode="objects"><b>🧸</b><span><strong>Предмети</strong><small>Дом, училище, играчки</small></span></button>
-<button class="mode vehicles" data-mode="vehicles"><b>🚗</b><span><strong>Превозни средства</strong><small>Коли, влакове, самолети</small></span></button>
-<button class="mode colors" data-mode="colors"><b>🎨</b><span><strong>Цветове</strong><small>14 цвята</small></span></button>
-<button class="mode shapes" data-mode="shapes"><b>🔺</b><span><strong>Форми</strong><small>14 форми</small></span></button>
-<button class="mode numbers" data-mode="numbers"><b>🔢</b><span><strong>Числа</strong><small>От 1 до 20</small></span></button>
-<button class="mode letters" data-mode="letters"><b>🔤</b><span><strong>Букви</strong><small>Българската азбука</small></span></button>
-<button class="mode food" data-mode="food"><b>🍎</b><span><strong>Храни</strong><small>Плодове, зеленчуци и храни</small></span></button>
-<button class="mode clothes" data-mode="clothes"><b>👕</b><span><strong>Дрехи</strong><small>Обувки, шапки и дрехи</small></span></button>
-<button class="mode body" data-mode="body"><b>👀</b><span><strong>Тяло</strong><small>Части на тялото</small></span></button>
-<button class="mode emotions" data-mode="emotions"><b>😊</b><span><strong>Емоции</strong><small>Весел, тъжен, изненадан</small></span></button>
-<button class="mode nature" data-mode="nature"><b>🌳</b><span><strong>Природа</strong><small>Слънце, дървета и време</small></span></button>
-<button class="mode professions" data-mode="professions"><b>👩‍⚕️</b><span><strong>Професии</strong><small>Лекар, пожарникар и още</small></span></button>
-<button class="mode places" data-mode="places"><b>🏫</b><span><strong>Места</strong><small>Училище, парк, ферма</small></span></button>
-</div>
-<h3 class="sectionTitle">Мини игри</h3><div class="menu miniMenu">
-<button class="mode counting" data-mode="counting"><b>🔢</b><span><strong>Броене</strong><small>Колко са?</small></span></button>
-<button class="mode sounds" data-mode="sounds"><b>🔊</b><span><strong>Звуци</strong><small>Познай по звука</small></span></button>
-<button class="mode opposites" data-mode="opposites"><b>↔️</b><span><strong>Противоположности</strong><small>Голямо / малко</small></span></button>
-<button class="mode odd" data-mode="odd"><b>🔎</b><span><strong>Кое е различно?</strong><small>Открий различното</small></span></button>
-<button class="mode patterns" data-mode="patterns"><b>🧠</b><span><strong>Последователности</strong><small>Какво следва?</small></span></button>
-<button class="mode matching" data-mode="matching"><b>🧩</b><span><strong>Съчетай</strong><small>Намери същото</small></span></button>
-<button class="mode memory" data-mode="memory"><b>🃏</b><span><strong>Памет</strong><small>Намери двойките</small></span></button>
-<button class="mode sorting" data-mode="sorting"><b>🗂️</b><span><strong>Сортиране</strong><small>Животно, предмет или превозно средство?</small></span></button>
-</div>
-<h3 class="sectionTitle">Приключение</h3><button class="adventureButton" data-mode="adventure"><span>🗺️</span><div><strong>Приключенски режим</strong><small>Фермата • Джунглата • Океанът • Градът • Космосът</small></div></button>
-<div class="install">На iPhone: Safari → Share → Add to Home Screen</div><div class="footer">Без реклами • Без регистрация • Работи офлайн • Български глас</div></section>
+<!doctype html><html lang="bg"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover,user-scalable=no"><meta name="theme-color" content="#58c8f6"><meta name="apple-mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-status-bar-style" content="default"><meta name="apple-mobile-web-app-title" content="Играй и учи"><link rel="manifest" href="./manifest.webmanifest"><link rel="icon" href="./icon.svg"><link rel="stylesheet" href="./style.css?v=6"><title>Играй и учи</title></head><body><div class="app">
+<section id="home" class="mapHome">
+  <div class="skyDecor cloud c1"></div><div class="skyDecor cloud c2"></div><div class="sunFace">☀️</div>
+  <div class="mapTop">
+    <div class="profileBubble"><span>👦</span><div><b>⭐ <i id="homeStars">0</i></b><small>Продължавай!</small></div></div>
+    <div class="topActions"><button id="albumBtn" class="hudBtn"><span>🎁</span><small>Награди</small></button><button id="settingsBtn" class="hudBtn"><span>⚙️</span><small>Настройки</small></button></div>
+  </div>
+  <div class="logoSign"><div class="logoWords"><span class="r">И</span><span class="o">Г</span><span class="g">Р</span><span class="b">А</span><span class="p">Й</span> <span class="smallWord">и</span> <span class="y">У</span><span class="r">Ч</span><span class="g">И</span></div><div class="logoSub">Откривай • Учи • Играй</div></div>
+  <div class="worldMap">
+    <button class="island farmIsland" data-world="farm"><div class="scene"><span class="back">🌾 🌻</span><span class="big">🐄</span><span>🐷</span><span>🐔</span><span class="tiny">🐥</span></div><div class="islandLabel redLabel">Ферма <i>›</i></div></button>
+    <button class="island jungleIsland" data-world="jungle"><div class="scene"><span class="back">🌴 🌿</span><span>🐵</span><span class="big">🐘</span><span>🐯</span><span class="tiny">🦜</span></div><div class="islandLabel greenLabel">Джунгла <i>›</i></div></button>
+    <div class="bridge bridgeOne">🌉</div>
+    <button class="island oceanIsland" data-world="ocean"><div class="scene"><span class="back">🪸 🫧</span><span class="big">🐬</span><span>🐠</span><span>🐢</span><span class="tiny">🐙</span></div><div class="islandLabel blueLabel">Океан <i>›</i></div></button>
+    <button class="island cityIsland" data-world="city"><div class="scene"><span class="back">🏢 🏥</span><span class="big">🚒</span><span>🚓</span><span>👮</span><span class="tiny">🚗</span></div><div class="islandLabel orangeLabel">Град <i>›</i></div></button>
+    <div class="lighthouse">🏝️</div>
+    <button class="island objectsIsland" data-mode="objects"><div class="scene"><span class="back">🏠 🪴</span><span class="big">🧸</span><span>⚽</span><span>🚗</span><span class="tiny">💡</span></div><div class="islandLabel purpleLabel">Предмети <i>›</i></div></button>
+    <button class="island schoolIsland" data-mode="letters"><div class="scene"><span class="back">🏫 📚</span><span class="big lettersScene">АБВ</span><span class="numbersScene">123</span><span class="tiny">🌍</span></div><div class="islandLabel coralLabel">Училище <i>›</i></div></button>
+    <button class="island spaceIsland" data-world="space"><div class="scene spaceScene"><span class="back">🌙 🪐 ⭐</span><span class="big">🚀</span><span>🧑‍🚀</span><span class="tiny">👽</span></div><div class="islandLabel violetLabel">Космос <i>›</i></div></button>
+    <button class="island creativeIsland" data-mode="matching"><div class="scene"><span class="back">🌈 ✨</span><span class="big">🎨</span><span>🧩</span><span>🖍️</span><span class="tiny">💡</span></div><div class="islandLabel limeLabel">Творчество <i>›</i></div></button>
+  </div>
+  <div class="quickDock"><button data-mode="colors"><span>🎨</span><b>Цветове</b></button><button data-mode="shapes"><span>🔺</span><b>Форми</b></button><button data-mode="numbers"><span>🔢</span><b>Числа</b></button><button data-mode="memory"><span>🃏</span><b>Памет</b></button></div>
+  <details class="learningDrawer"><summary>✨ Още игри и знания</summary><div class="drawerGrid"><button data-mode="food">🍎<span>Храни</span></button><button data-mode="clothes">👕<span>Дрехи</span></button><button data-mode="body">👀<span>Тяло</span></button><button data-mode="emotions">😊<span>Емоции</span></button><button data-mode="nature">🌳<span>Природа</span></button><button data-mode="professions">👩‍⚕️<span>Професии</span></button><button data-mode="places">🏫<span>Места</span></button><button data-mode="vehicles">🚗<span>Превозни средства</span></button><button data-mode="counting">🔢<span>Броене</span></button><button data-mode="sounds">🔊<span>Звуци</span></button><button data-mode="opposites">↔️<span>Противоположности</span></button><button data-mode="odd">🔎<span>Различното</span></button><button data-mode="patterns">🧠<span>Последователности</span></button><button data-mode="sorting">🗂️<span>Сортиране</span></button><button data-mode="animals">🐾<span>Всички животни</span></button><button data-mode="adventure">🗺️<span>Приключение</span></button></div></details>
+  <div class="woodQuote">Малките стъпки водят до големи мечти! ❤️</div><div class="install">На iPhone: Safari → Share → Add to Home Screen</div><div class="footer">Без реклами • Без регистрация • Работи офлайн • Български глас</div>
+</section>
 <section id="game" class="hidden"><header><button id="back" class="round">←</button><span id="modeTitle" class="badge">Игра</span><span class="badge">🔥 <i id="streak">0</i></span><span class="badge">⭐ <i id="stars">0</i></span></header><div id="quizArea"><div class="prompt"><h2 id="promptText"></h2><p id="subPrompt"></p><button id="repeat" class="speak">🔊 Чуй отново</button></div><div id="target" class="target hidden"><div id="targetVisual"></div><strong id="targetLabel"></strong></div><div id="grid" class="grid"></div></div><div id="memoryArea" class="hidden"><div class="prompt"><h2>Намери еднаквите карти</h2><p>Обръщай по две карти</p><button id="memorySpeak" class="speak">🔊 Чуй задачата</button></div><div id="memoryGrid" class="memoryGrid"></div></div><div id="feedback" class="feedback"></div></section></div>
 <div id="adventure" class="overlayPage hidden"><div class="pageCard"><div class="pageHeader"><button id="closeAdventure" class="round">←</button><h2>Приключение</h2></div><p>Избери свят</p><div class="worldGrid"><button data-world="farm">🚜<strong>Фермата</strong></button><button data-world="jungle">🌴<strong>Джунглата</strong></button><button data-world="ocean">🌊<strong>Океанът</strong></button><button data-world="city">🏙️<strong>Градът</strong></button><button data-world="space">🚀<strong>Космосът</strong></button></div></div></div>
 <div id="album" class="overlayPage hidden"><div class="pageCard"><div class="pageHeader"><button id="closeAlbum" class="round">←</button><h2>Моят албум</h2></div><p>На всеки 5 звездички отключваш нов стикер.</p><div id="albumGrid" class="albumGrid"></div></div></div>
