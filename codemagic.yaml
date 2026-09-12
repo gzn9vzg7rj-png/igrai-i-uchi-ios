@@ -3,26 +3,41 @@ workflows:
     name: Igrai i Uchi - TestFlight
     max_build_duration: 60
     instance_type: mac_mini_m2
+
     integrations:
       app_store_connect: apple-connect
+
     environment:
       xcode: latest
       ios_signing:
         distribution_type: app_store
         bundle_identifier: com.igraiuchi.learn.20260912
+
     scripts:
+      - name: Prepare Xcode project
+        script: |
+          rm -rf "$CM_BUILD_DIR/TapAndLearnBG" "$CM_BUILD_DIR/TapAndLearnBG.xcodeproj"
+          base64 -D "$CM_BUILD_DIR/project.tar.gz.b64" | tar -xz -C "$CM_BUILD_DIR"
+          mkdir -p "$CM_BUILD_DIR/TapAndLearnBG/Assets.xcassets/AppIcon.appiconset"
+          swift "$CM_BUILD_DIR/ci/generate_icon.swift" "$CM_BUILD_DIR/TapAndLearnBG/Assets.xcassets/AppIcon.appiconset/AppIcon-1024.png"
+
       - name: Verify project
         script: |
           xcodebuild -list -project "$CM_BUILD_DIR/TapAndLearnBG.xcodeproj"
+
       - name: Configure Apple signing
         script: |
           xcode-project use-profiles --project "$CM_BUILD_DIR/TapAndLearnBG.xcodeproj"
+
       - name: Build signed iPhone IPA
         script: |
           xcode-project build-ipa --project "$CM_BUILD_DIR/TapAndLearnBG.xcodeproj" --scheme "TapAndLearnBG"
+
     artifacts:
       - build/ios/ipa/*.ipa
       - /tmp/xcodebuild_logs/*.log
+      - $HOME/Library/Developer/Xcode/DerivedData/**/Build/**/*.dSYM
+
     publishing:
       app_store_connect:
         auth: integration
